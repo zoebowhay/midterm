@@ -2,7 +2,14 @@
 @import url('reset.css');
 @import url('testing.css');
 
+
+
 /* actual styles */
+html {
+	background-image:url('catlitter.jpg');
+	background-size:cover;
+}
+
 .intro header h1, 
 .intro header h2 {
 	display:none;
@@ -34,7 +41,7 @@
 		height:298px;
 		width:362px;
 		display:block;
-		position:absolute;
+		position:fixed;
 		left:58.5%;
 		bottom:0;
 	}
@@ -47,5 +54,22 @@
 
 @media all and (max-width:768px) {
 
+
+}
+
+@media all and (min-width:1500px) {
+	
+	.sidebar {
+		position:absolute;
+		top:0;
+		left:0;
+		margin:0;
+		width:400px;
+		z-index:-1;
+	}
+	
+	.sidebar:hover {
+		z-index:1;
+	}
 
 }
