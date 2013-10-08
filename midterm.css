@@ -4,18 +4,27 @@
 
 /* actual styles */
 
-/* column sizes */
-.page-wrapper {
-	padding:30px
+
+
+@media all and (min-width:800px) {
+	/* column sizes */
+	.page-wrapper {
+		padding:30px
+	}
+
+	.intro,
+	.supporting {
+		width:60%;
+		float:left;
+	}
+
+	.sidebar {
+		width:35%;
+		margin-left:65%;
+	}
 }
 
-.intro,
-.supporting {
-	width:60%;
-	float:left;
-}
+@media all and (max-width:799px) {
 
-.sidebar {
-	width:35%;
-	margin-left:65%;
+
 }
