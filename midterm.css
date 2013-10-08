@@ -6,7 +6,7 @@
 
 
 
-@media all and (min-width:800px) {
+@media all and (min-width:769px) {
 	/* column sizes */
 	.page-wrapper {
 		padding:30px
@@ -24,7 +24,7 @@
 	}
 }
 
-@media all and (max-width:799px) {
+@media all and (max-width:768px) {
 
 
 }
