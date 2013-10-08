@@ -3,7 +3,17 @@
 @import url('testing.css');
 
 /* actual styles */
+.intro header h1, 
+.intro header h2 {
+	display:none;
+}
 
+.intro header {
+	height:163px;
+	background-image:url('header.png');
+	background-repeat:no-repeat;
+	background-size:contain;
+}
 
 
 @media all and (min-width:769px) {
