@@ -27,6 +27,17 @@
 		width:60%;
 		float:left;
 	}
+	
+	.supporting:after {
+		content:"";
+		background-image:url("after.png");
+		height:298px;
+		width:362px;
+		display:block;
+		position:absolute;
+		left:58.5%;
+		bottom:0;
+	}
 
 	.sidebar {
 		width:35%;
