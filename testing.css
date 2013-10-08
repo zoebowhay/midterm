@@ -1,0 +1,31 @@
+/* color blocking of content areas */
+html {
+	background-color:white;
+}
+
+.intro {
+	background-color:orange;
+}
+
+.intro header, 
+.intro .summary, 
+.intro .preamble {
+	border: 5px dashed blue;
+}
+
+.supporting {
+	background-color:yellow;
+}
+
+.supporting div, 
+.supporting footer {
+	border: 5px dashed blue;
+}
+
+.sidebar {
+	background-color:green;
+}
+
+.sidebar .wrapper div {
+	border: 5px dashed blue;
+}
