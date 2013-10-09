@@ -67,6 +67,7 @@ a {
 	.supporting {
 		width:60%;
 		float:left;
+		padding:2em;
 	}
 		
 	.supporting, 
@@ -110,6 +111,17 @@ a {
 	.supporting .participation p,
 	.supporting .requirements p{
 		-webkit-column-count:2;
+	}
+	
+	.supporting:after {
+		content:"";
+		background-image:url("cat.png");
+		width:262px;
+		height:391px;
+		display:block;
+		position:fixed;
+		left:50%;
+		bottom:0;
 	}
 	
 	.supporting footer {
