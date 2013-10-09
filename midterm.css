@@ -1,27 +1,27 @@
 /* html5reset from: https://raw.github.com/murtaugh/HTML5-Reset/master/_/css/reset.css */
 @import url('reset.css');
-@import url('testing.css');
-
 
 
 /* actual styles */
 html {
-	background-image:url('catlitter.jpg');
-	background-size:cover;
+	font-family:helvetica, sans-serif;
+	text-align:justify;
+    -webkit-hyphens:auto;
+    -webkit-hyphenate-character:"\2010";
+    -webkit-hyphenate-limit-after:1;
+    -webkit-hyphenate-limit-before:3;
+    background-image:url('diagonal.png');
+    background-size:cover;
 }
 
-.intro header h1, 
-.intro header h2 {
-	display:none;
+body div, body section{
+	background-color:white;
 }
 
-.intro header {
-	height:163px;
-	background-image:url('header.png');
-	background-repeat:no-repeat;
-	background-size:contain;
+a {
+	color:black;
+	text-decoration:none;
 }
-
 
 @media all and (min-width:769px) {
 	/* column sizes */
@@ -29,26 +29,103 @@ html {
 		padding:30px
 	}
 
+	.intro header {
+		margin-bottom:1em;
+		padding-bottom:.4em;
+		border-bottom:.4em solid black;
+	}
+
+	.intro h1 {
+		font-size:3.75em;
+		text-transform:uppercase;
+	}
+	
+	.intro h2 {
+		font-size:2em;
+		font-weight:100;
+		text-transform:lowercase;
+		margin-top:-.4em;
+		margin-left:.1em;
+	}
+	
+	.intro .preamble {
+		margin-top:2em;
+	}
+	
+	.intro .preamble h3 {
+		font-size:2em;
+	}
+	
+	.intro p {
+		font-size:.9em;
+		font-weight:100;
+		line-height:1.2em;
+		text-align:left;
+	}
+
 	.intro,
 	.supporting {
 		width:60%;
 		float:left;
 	}
+		
+	.supporting, 
+	.supporting .participation {
+		margin-top:2em;
+		font-weight:100;
+	}		
 	
-	.supporting:after {
-		content:"";
-		background-image:url("after.png");
-		height:298px;
-		width:362px;
-		display:block;
-		position:fixed;
-		left:58.5%;
-		bottom:0;
+	.supporting h3 {
+		font-size:2em;
+	}
+	
+	.supporting .benefits h3 {
+		display:none;
+	}
+	
+	.supporting .benefits:before {
+		content:'“';
+		font-size:4em;
+		position:absolute;
+		left:0;
+		top:0;
+		font-weight:bold;
+	}
+	
+	.supporting .benefits {
+		position:relative;
+		font-size:1.5em;
+		padding:1.5em 2.2em;
+	}
+	
+	.supporting .benefits:after {
+		content:'”';
+		font-size:4em;
+		position:absolute;
+		right:0;
+		bottom:-.6em;
+		font-weight:bold;
+	}
+	
+	.supporting .participation p,
+	.supporting .requirements p{
+		-webkit-column-count:2;
+	}
+	
+	.supporting footer {
+		margin-top:1em;
+		background-color:black;
+	}
+	
+	.supporting footer a {
+		color:black;
 	}
 
 	.sidebar {
 		width:35%;
-		margin-left:65%;
+		margin-left:62.75%;
+		padding-left:2.25%;
+		border-left:.3em solid black;
 	}
 }
 
