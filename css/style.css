@@ -1,0 +1,16 @@
+
+/* html5 reset css file */
+@import url('html5reset.css');
+
+/* standard css for desktop browsers */
+body {
+	background-color:gainsboro;
+}
+
+/* override css for mobile browsers */
+@media all and (min-width:320px) and (max-width:400px) {
+	body {
+		font-size:1em;
+		background-color:orange;
+	}
+}
