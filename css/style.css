@@ -3,8 +3,12 @@
 @import url('html5reset.css');
 
 /* standard css for desktop browsers */
+html {
+	background-image: url(https://www.we-energies.com/weimages/residential/service/landscape_fakerock_lg.jpg);
+  background-repeat: repeat;
+}
 body {
-	background-color:red;
+	background-color:green;
 }
 
 /* override css for mobile browsers */
